@@ -1,6 +1,7 @@
 // src/components/AccountSettings.tsx
 import React from "react";
 import { CameraIcon } from "@heroicons/react/24/solid";
+import image from "../assets/image.png";
 
 const AccountsPage: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const AccountsPage: React.FC = () => {
           {/* Avatar */}
           <div className="relative">
             <img
-              src="/image.png"
+              src={image}
               alt="Profile"
               className="w-14 h-14 rounded-full object-cover"
             />

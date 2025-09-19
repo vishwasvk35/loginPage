@@ -17,10 +17,10 @@ const Home: React.FC = () => {
           </p>
 
           <div className="mt-6 space-y-3">
-            <button onClick={()=>{navigator('/signup')}} className="w-full py-3 rounded-md bg-purple-700 text-white font-medium hover:bg-purple-700 transition">
+            <button onClick={()=>{navigator('/signup')}} className="w-full py-3 rounded-md bg-purple-700 text-white font-medium hover:bg-purple-700 transition cursor-pointer">
               Create Account
             </button>
-            <button onClick={()=>{navigator('/login')}} className="w-full py-3 rounded-md bg-purple-200 text-purple-800 font-medium hover:bg-purple-300 transition">
+            <button onClick={()=>{navigator('/login')}} className="w-full py-3 rounded-md bg-purple-200 text-purple-800 font-medium hover:bg-purple-300 transition cursor-pointer">
               Already Registered? Login
             </button>
           </div>
