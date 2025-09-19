@@ -16,7 +16,7 @@ const AccountsPage: React.FC = () => {
           {/* Avatar */}
           <div className="relative">
             <img
-              src="../../public/image.png"
+              src="/image.png"
               alt="Profile"
               className="w-14 h-14 rounded-full object-cover"
             />
