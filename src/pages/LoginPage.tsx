@@ -9,6 +9,11 @@ const LoginPage = () => {
 
   const isFormValid = email.trim() !== "" && password.trim() !== "";
 
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault(); // stop full page reload
+  navigator("/account");
+};
+
   return (
     <div className="max-w-md w-full h-screen bg-white rounded-lg shadow-sm algin-center mx-auto p-8">
         <div className="mb-8 mt-15">
@@ -25,11 +30,8 @@ const LoginPage = () => {
         </div>
         
         <form
-          action=""
           className="grid gap-5"
-          onSubmit={() => {
-            navigator("/account");
-          }}
+          onSubmit={handleSubmit}
         >
           <div className="relative w-full">
             <label
